@@ -28,7 +28,7 @@ string solve(int N)
     if (N < 4)
         return "No";
 
-    if (N % 2 == 0 && N >= 4)
+    if (N % 2 == 0)
         return "Yes";
 
     if (!isprime(N))
