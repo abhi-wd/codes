@@ -22,14 +22,19 @@ int findGCD(int arr[], int N)
 
 int main()
 {
-    int N;
-    cin >> N;
-    int arr[N];
-    for (int i = 0; i < N; i++)
+    int T;
+    cin >> T;
+    for (int j = 0; j < T; j++)
     {
-        cin >> arr[i];
+        int N;
+        cin >> N;
+        int arr[N];
+        for (int i = 0; i < N; i++)
+        {
+            cin >> arr[i];
+        }
+        int res = findGCD(arr, N);
+        cout << res << endl;
     }
-    int res = findGCD(arr, N);
-    cout << res;
     return 0;
 }
